@@ -15,6 +15,26 @@ Have you found any errors or would like to contribute something? Feel free to se
 | A = rotMatX(angleInDeg) | Returns a rotational matrix A rotated around the x-axis with the angle angleInDeg. |
 | A = rotmatY(angleInDeg) | Returns a rotational matrix A rotated around the y-axis with the angle angleInDeg. |
 | A = rotMatZ(angleInDeg) | Returns a rotational matrix A rotated around the z-axis with the angle angleInDeg. |
+| T = poseToHmatStaubli(pose) | Returns a homogeneous matrix T (for Stäubli) for the pose pose. |
+| T = formHmat(rotMat, transVect) | Returns a homogeneous matrix T for a given rotational matrix rotMat and a translational vector. |
+
+# Definitions
+
+## Pose
+A pose es defined like:
+    
+    pose = [X Y Z A B C]
+
+| Parameter | Description |
+|--------|--------|
+| X | Position on the x-axis |
+| Y | Position on the y-axis |
+| Z | Position on the z-axis |
+| A | Angle around the x-axis |
+| B | Angle around the y-axis |
+| C | Angle around the z-axis |
+
+
 # FAQ
 
 ## How to include the files
