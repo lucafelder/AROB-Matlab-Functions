@@ -8,6 +8,13 @@ I am providing the code as is. It is tested with Matlab R2022b, but should also 
 Have you found any errors or would like to contribute something? Feel free to send me an email or start a GitHub issue.
 
 
+# Function Overview
+
+| Function | Description |
+|--------|--------|
+| A = rotMatX(angleInDeg) | Returns a rotational matrix A rotated around the x-axis with the angle angleInDeg. |
+| A = rotmatY(angleInDeg) | Returns a rotational matrix A rotated around the y-axis with the angle angleInDeg. |
+| A = rotMatZ(angleInDeg) | Returns a rotational matrix A rotated around the z-axis with the angle angleInDeg. |
 # FAQ
 
 ## How to include the files
@@ -30,3 +37,12 @@ Have you found any errors or would like to contribute something? Feel free to se
         R = rotXHmatDeg(phi);
 
 
+# Troubleshooting hints
+
+## Angle mode
+Have you entered the angles in degree?
+    You can use rad2deg(angle) to convert the angles from radiant into degree.
+    E.g.:
+
+    A = rotMatX( rad2deg(pi) );
+   
