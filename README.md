@@ -17,6 +17,8 @@ Have you found any errors or would like to contribute something? Feel free to se
 | A = rotMatZ(angleInDeg) | Returns a rotational matrix A rotated around the z-axis with the angle angleInDeg. |
 | T = poseToHmatStaubli(pose) | Returns a homogeneous matrix T (for Stäubli) for the pose pose. |
 | T = formHmat(rotMat, transVect) | Returns a homogeneous matrix T for a given rotational matrix rotMat and a translational vector. |
+| T = DhParamToHmat1axis(thetaInDeg, d, a, alphaInDeg) | Converts DH Parameters into a homogeneous Matrix. |
+| T = DhParamToHmat6axis(dh, joints) | Converts a complet DH parameter set into a homogeneous Matrix for a 6 axis robot. |
 
 # Definitions
 
